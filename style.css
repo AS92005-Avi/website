@@ -14,3 +14,6 @@ navbar a {
     color: #white; /* Change hover color */
 }
 
+img {
+  border-radius: 50%;
+}
