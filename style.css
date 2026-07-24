@@ -1,19 +1,54 @@
+
 body {
   background-color: lightyellow;
 }
 
 nav {
     position: absolute;
-    top: 3%;  /* Adjust based on where you want the nav to appear */
+    top: 0%;  /* Adjust based on where you want the nav to appear */
     left: 23%;
     transform: translateX(-50%);
-    background-color: rgba(153,189,85); /* Semi-transparent background */    padding: 10px 100px;
-    border-radius: 10px;
+    background-color: rgba(153,189,85); /* Semi-transparent background */    padding: 1px 2000px;
+    border-radius: 0px;
 }
 navbar a {
-    color: #white; /* Change hover color */
+    color: white; /* Change hover color */
 }
 
 img {
   border-radius: 50%;
 }
+
+
+
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
