@@ -3,52 +3,50 @@ body {
   background-color: lightyellow;
 }
 
-nav {
-    position: absolute;
-    top: 0%;  /* Adjust based on where you want the nav to appear */
-    left: 23%;
-    transform: translateX(-50%);
-    background-color: rgba(153,189,85); /* Semi-transparent background */    padding: 1px 2000px;
-    border-radius: 0px;
-}
-navbar a {
-    color: white; /* Change hover color */
+
+  margin: 0;
+  padding: 0;
 }
 
-img {
-  border-radius: 50%;
+h2, p {
+  margin: 10px;
 }
 
-
-
-ul.topnav {
-  display: flex;
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333333;
+  background-color: #8fb85a;
+  display: flex;
 }
 
-/* Style links in topnav */
-ul.topnav li a {
+ul li a {
   display: block;
-  color: #f1f1f1;
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change color on hover */
-ul.topnav li a:hover {
-  background-color: #dddddd;
-  color: black;
+ul li a:hover {
+  background-color: #5e4b37;
 }
 
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
 
-
-
+div.flex-container > div {
+  margin: 10px;
+}
 
 
 
 @media screen and (max-width:600px) {
   div.flex-container {
     flex-direction: column;
+
+
+
+
+
