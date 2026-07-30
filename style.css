@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4efc8;
+    background: #4a3a2f;
 }
 
 /* NAVIGATION */
@@ -11,19 +11,19 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
-    background: #95b84e;
+    background: #61753d;
 }
 
 nav li a {
     display: block;
     padding: 15px 20px;
     text-decoration: none;
-    color: black;
+    color: #4a3a2f;
     font-weight: bold;
 }
 
 nav li a:hover {
-    background: #7fa13d;
+    background: #798565;
 }
 
 /* HEADER */
@@ -46,11 +46,12 @@ nav li a:hover {
 .title h1 {
     font-size: 3rem;
     margin: 0;
-    color: #6a4328;
+    color: #4c6134;
 }
 
 .title p {
     font-size: 1.3rem;
+    color: #798565;
 }
 
 /* SEARCH */
@@ -63,7 +64,7 @@ nav li a:hover {
     width: 80%;
     height: 250px;
     margin: 30px auto;
-    background: lightblue;
+    background: #402e27;
     border-radius: 150px;
     display: flex;
     justify-content: center;
@@ -88,7 +89,7 @@ nav li a:hover {
 }
 
 .card {
-    background: #cde6f4;
+    background: #4c6134;
     border-radius: 15px;
     text-align: center;
     padding: 15px;
@@ -243,5 +244,93 @@ footer {
         height: 180px;
         margin: auto;
         grid-row: auto;
+    }
+}
+
+
+.help-title {
+    display: inline-block;
+    background: #95b84e;
+    padding: 8px 18px;
+    border-radius: 10px;
+    color: #5e4b37;
+    margin: 30px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.3);
+}
+
+#circularcards
+.help-grid {
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.help-card {
+    text-align: center;
+}
+
+.help-card img {
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    box-shadow: 4px 4px 10px rgba(0,0,0,.3);
+}
+
+
+#donationcards
+.donate-grid {
+    width: 95%;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.donate-card {
+    background: transparent;
+    text-align: center;
+}
+
+.donate-card img {
+    width: 100%;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: 4px 4px 10px rgba(0,0,0,.3);
+}
+
+.donate-card h4 {
+    margin: 5px 0;
+}
+
+
+#divider
+hr {
+    width: 85%;
+    margin: 40px auto;
+    border: 1px solid #9b9b9b;
+}
+
+#mobile
+@media (max-width: 700px) {
+
+    .help-grid,
+    .donate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .help-card img {
+        width: 140px;
+        height: 140px;
     }
 }
