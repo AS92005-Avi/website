@@ -54,31 +54,14 @@ nav li a:hover {
     color: #798565;
 }
 
-/* SEARCH */
 
-
-
-/* SLIDESHOW */
-
-.slideshow {
-    width: 80%;
-    height: 250px;
-    margin: 30px auto;
-    background: #402e27;
-    border-radius: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* MISSION */
-
+/* Inspiring message */
 .mission {
     text-align: center;
     margin: 30px;
 }
 
-/* CARDS */
+/* PAGE CARDS */
 
 .cards {
     width: 85%;
@@ -102,14 +85,28 @@ nav li a:hover {
     border-radius: 10px;
 }
 
-/* FOOTER */
+.card a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #4a3a2f;
+    font-weight: bold;
+}
 
+.card a:hover{
+    color: #798565
+}
+
+
+/* FOOTER */
 footer {
     margin-top: 40px;
     text-align: center;
-    background: #95b84e;
+    background: #798565;
     padding: 20px;
 }
+
+/* CODE FOR RESPONSIVE DESIGN */
 @media (max-width: 600px) {
     .hero {
         flex-direction: column;
@@ -131,10 +128,13 @@ footer {
     width: 90%;
 }
 
+
+/* CLIMATE CHANGE PAGE */
+/* CIRCLE CREATION */
 .circle {
     width: 180px;
     height: 180px;
-    background: #9ec553;
+    background: #798565;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@ footer {
     text-align: center;
     box-shadow: 4px 4px 10px rgba(0,0,0,.3);
 }
-
+/* CIRCLE HEADER*/
 .circle h2{
     font-size: 1.5rem;
     text-decoration: underline;
@@ -152,20 +152,56 @@ footer {
     flex: 1;
 }
 
+/* IMAGE */
 .image-box{
     width: 100%;
-    max-width: 400px
-    height: 180px;
-    background: lightblue;
+    max-width: 100px
+    height: 100px;
     border-radius: 15px;
     margin-bottom: 15px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,.3);
 }
-
+/* PARAGRAPH OF INFO */
 .content p{
     max-width: 500px;
     text-align: center;
 }
+/* FOOTER */
+<!-- Divider separating the main content from additional information -->
+<hr class="divider">
+
+
+
+/* Creates a horizontal divider between sections */
+.divider {
+    width: 80%;
+    margin: 40px auto;
+    border: none;
+    border-top: 2px solid #808080;
+}
+
+/* Styles the paragraph below the divider */
+.extra-info {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+/* RESPONSIVE */
 @media (max-width: 700px) {
     .info-section{
         flex-direction: column;
@@ -182,7 +218,8 @@ footer {
 
 }
 
-
+/* PROJECTS PAGE */
+/* GRID LAYOUT */
 .projects-grid{
     width: 90%;
     margin: 40px auto;
@@ -196,11 +233,11 @@ footer {
 .project {
     text-align: center;
 }
-
+/* CIRCLE WITH NUMBERS ON TOP OF INFO */
 .number-circle{
     width: 80px;
     height: 40px;
-    background: #b7d5ec;
+    background: #61753d;
     border-radius: 50%;
     margin: 0 auto 15px;
 
@@ -210,19 +247,20 @@ footer {
 
     box shadow: 3px 3px 8px rgba(0,0,0,.3);
 }
-
+/* INFORMATION PARAGRAPHS */
 .project p{
     line-height: 1.5;
     border-bottom: 2px solid #8b8b8b
     padding-bottom: 15px;
 }
 
+/* TITLE IN THE MIDDLE */
 .center-title{
     grid-row: span 2;
 
     width: 180px;
     height: 340px
-    background: #9ec553;
+    background: #61753d;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -235,6 +273,7 @@ footer {
     color: 5e4b37
     text-decoration: underline;
 }
+/* RESPONSIVE CODE */
 @media (max-width: 700px){
     .projects-grid{
         grid-template-columns: 1fr;
@@ -247,17 +286,17 @@ footer {
     }
 }
 
-
+/* TITLE */
 .help-title {
     display: inline-block;
-    background: #95b84e;
+    background: #798565;
     padding: 8px 18px;
     border-radius: 10px;
     color: #5e4b37;
     margin: 30px;
     box-shadow: 4px 4px 10px rgba(0,0,0,.3);
 }
-
+/* CIRCLE IMAGES */
 #circularcards
 .help-grid {
     width: 90%;
@@ -283,7 +322,7 @@ footer {
 }
 
 
-#donationcards
+/* DONATION CARDS */
 .donate-grid {
     width: 95%;
     margin: 40px auto;
